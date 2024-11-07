@@ -76,12 +76,6 @@
             "name": "<b>Enable Weekly Log File Clearing</b>  <i>(optional)</i><br/>If checked AND using single-file mode, a cron job will clear the single log file every Sunday a midnight to prevent it from growing too large.  This is designed for cases where you are shipping your logs off the server to another tool",
             "required": false,
             "type": "checkbox"
-        },
-        {
-            "key": "gcp-project-id",
-            "name": "<b>GCP Logging</b> <i>(optional--special use)</i><br/>Provide the Google Cloud Project Name and emLogger will write its logs into that StackDriver for that project.  The service account running this server must have permission to access StackDriver account.",
-            "required": false,
-            "type": "text"
         }
     ],
     "crons": [
